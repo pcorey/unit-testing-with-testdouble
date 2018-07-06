@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "test": "mocha ./tests --compilers js:babel-register"
+    "test": "mocha ./tests --compilers js:babel-register",
+    "test-watch": "npm test -- -w"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0",
+    "meteor-node-stubs": "^0.4.1",
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
     "react-dom": "^15.1.0"
@@ -16,9 +17,9 @@
     "babel-preset-meteor": "^6.11.1",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.9.0",
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "testdouble": "^1.4.3"
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "testdouble": "^3.8.1"
   },
   "version": "1.0.0",
   "main": "index.js",
